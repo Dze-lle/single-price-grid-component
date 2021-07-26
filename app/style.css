@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%
+}
+
+* , 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    /*Primary*/
+    --cyan: hsl(179, 62%, 43%);
+    --b-yellow: hsl(71, 73%, 54%);
+    --white: hsl(0, 0%, 100%);
+
+    /*Neutral*/
+    --l-grey: hsl(204, 43%, 93%);
+    --g-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: 'Karla' , sans-serif;
+    font-size: 1rem;
+    background-color: var(--l-grey);
+    color: var(--white);
+    padding: 4.5rem 2rem;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin-top: 0px;
+}
+
+.container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container > * {
+   padding: 32px 25px 13px; 
+}
+
+.container__community {
+    background-color: var(--white);
+}
+
+.container__community h2 {
+    color: var(--cyan);
+}
+
+.container__community h3 {
+    color: var(--b-yellow);
+}
+
+.container__community p {
+    color: var(--g-blue);
+    line-height: 1.7;
+}
+
+.container__subscription {
+    background-color: var(--cyan);
+}
+
+.container__subscription h2 {
+    font-size: 18px;
+}
+
+.container__subscription .subscription__month {
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: .70rem;
+}
+
+.container__subscription .subscription__month span {
+    font-size: 18px;
+    opacity: .5;
+    margin-left: 1rem;
+    font-weight: normal;
+}
+
+.container__subscription h3 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 2.15rem;
+}
+
+.container__subscription a {
+    font-size: 1.20rem;
+    font-weight: bold;
+    background-color: var(--b-yellow);
+    color: var(--white);
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: .85rem 0;
+    margin: 0 0 1.50rem;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-in-out;
+}
+
+.container__subscription a:hover {
+    opacity: .7;
+}
+
+.container__review {
+    background-color: var(--cyan);
+    opacity: 0.8;
+}
+
+.container__review h2 {
+    font-size: 18px;
+}
+
+.container__review ul {
+    padding: 0;
+}
+
+.container__review ul li {
+    list-style: none;
+    opacity: .5;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: .08fr 1fr;
+        max-width: 635px;
+        margin: 0 auto;
+    }
+
+    .container > * {
+        padding: 45px 42px 20px;
+    }
+
+    .container__community {
+        grid-column: 1 / 3;
+    }
+}
+
+
+
+
+
