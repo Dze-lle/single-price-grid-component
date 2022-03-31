@@ -46,11 +46,11 @@ h1, h2, h3, p {
     background-color: var(--white);
 }
 
-.container__community h2 {
+.container__community h1 {
     color: var(--cyan);
 }
 
-.container__community h3 {
+.container__community h2 {
     color: var(--b-yellow);
 }
 
@@ -61,10 +61,6 @@ h1, h2, h3, p {
 
 .container__subscription {
     background-color: var(--cyan);
-}
-
-.container__subscription h2 {
-    font-size: 18px;
 }
 
 .container__subscription .subscription__month {
@@ -113,7 +109,7 @@ h1, h2, h3, p {
     opacity: 0.8;
 }
 
-.container__review h2 {
+.container__review h4 {
     font-size: 18px;
 }
 
